@@ -1,0 +1,23 @@
+[
+	{
+		"test": "3\n5 3\nH T T H T\n7 4\nH H T T T H H\n6 1\nT H T H T T"
+	},
+	{
+		"test": "1\n1 1\nH\n"
+	},
+	{
+		"test": "1\n2 1\nH H\n"
+	},
+	{
+		"test": "\n"
+	},
+	{
+		"test": "1\n2 1\nH T\n"
+	},
+	{
+		"test": "1\n2 1\nT T\n"
+	},
+	{
+		"test": "1\n2 1\nT H\n"
+	}
+]

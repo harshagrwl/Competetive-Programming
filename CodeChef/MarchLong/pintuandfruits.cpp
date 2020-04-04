@@ -1,0 +1,92 @@
+ /* **********@harsh_agr********** */
+
+#include<bits/stdc++.h>
+typedef unsigned long long ull;
+typedef long long ll;
+typedef long l;
+ 
+#define pii pair<int,int>
+#define pli pair<long,int>
+#define pil pair<int,long>
+#define pll pair<long,long>
+ 
+#define vi vector<int>
+#define vll vector<ll>
+#define vul vector<ull>
+#define vii vector<pii>
+#define vvi vector<vector<int>>
+#define vvii vector<vector<pii>>
+#define vvl vector<vector<l>>
+#define vs vector<string>
+#define mii map<int,int>
+#define msi map<string,int>
+
+#define rep(i, begin, end) for (__typeof(end) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
+#define lp(i,n) 	for(int i=0;i<n;i++)
+#define lpd(i,n)    	for(int i=n;i>=0;i--)
+#define lp1(itr,start,stop)     for(int itr=start;itr<stop;itr++)
+#define lpd1(itr,start,stop)     for(int itr=start;itr>stop;itr--)
+#define W(itr) while(itr--)
+#define mp(a,b) make_pair(a,b) 
+#define last(a) (a)[((a).size())-1]
+#define pb(b) push_back(b)
+#define f first
+#define s second
+#define M 1000000007  
+ 
+using namespace std;
+
+int main(){ 
+   ios_base:: sync_with_stdio(false); cin.tie(0); cout.tie(0);
+   // freopen("input.txt", "r", stdin);
+   // freopen("output.txt", "w", stdout);
+   ll TESTS = 1;
+   cin>>TESTS;
+   while(TESTS--){
+   		int m,n;
+   		cin>>n>>m;
+   		int f[n],p[n],a[m],vis[m];
+   		vii v;
+   		lp(i,m){
+   			a[i] = 0;
+   			vis[i] = 0;
+   			
+   		}
+   		lp(i,n){
+   			cin>>f[i];
+   		}   
+   		lp(i,n){
+   			cin>>p[i];
+   		}
+   		lp(i,n){
+   			a[f[i]-1] += p[i];
+   			vis[f[i]-1] = 1;
+   			
+   		}
+   		lp(i,m){
+   			v.push_back(make_pair(a[i],vis[i]));
+   		}
+   		
+   		// lp(i,m){
+   		// 	if(a[i]!=-1) a[i]+=1;
+   		// 	cout<<a[i]<<" ";
+   		// 	cout<<endl;
+   		// 	cout<<vis[i]<<" ";
+   		// }
+   		// cout<<endl;
+   		sort(v.begin(),v.end());
+   		// lp(i,m){
+   		// 	cout<<v[i].first<<" "<<v[i].second<<endl;
+   		// }
+   		
+   		lp(i,m){
+   			if(v[i].second!=0){
+   				cout<<v[i].first<<endl;
+   				break;
+   			}
+
+   		}
+   }
+   return 0;
+}
+ 

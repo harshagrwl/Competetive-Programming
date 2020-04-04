@@ -1,0 +1,14 @@
+[
+	{
+		"test": "abcdaf\nacbcf\n"
+	},
+	{
+		"test": "abcdaf\nacbcfq\n"
+	},
+	{
+		"test": "abc\ndec\n"
+	},
+	{
+		"test": "abcdq\nbercq\n"
+	}
+]
